@@ -12,9 +12,9 @@ b_day = r_number[4:6]
 gender = r_number[7]
 
 if gender == '1' or gender == '2':
-    b_year = '19' + year
+    year = '19' + b_year
 elif gender == '3' or gender == '4':
-    b_year = '20' + year
+    year = '20' + b_year
 else:
     print('올바른 주민등록번호를 입력하세요.')
     exit()
@@ -24,7 +24,7 @@ if gender == '1' or gender == '3':
 else:
     gender_text = '여자'
 
-print('나는 {}년 {}월 {}일에 태어난 {}입니다.'.format(b_year, b_month, b_day, gender_text))
+print('나는 {}년 {}월 {}일에 태어난 {}입니다.'.format(year, b_month, b_day, gender_text))
 
 
 #############################################################
