@@ -19,7 +19,7 @@ gender = '남자' if gender_year == 1 or gender_year == 3 else '여자'
 
 #90, 00년생 판별
 if 0 <= birth_year <= 23:
-    birth_year_num = birth_year +  2000
+    birth_year_num = birth_year + 2000
 
 if 24<= birth_year <= 99:
     birth_year_num = birth_year + 1900
