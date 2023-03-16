@@ -5,15 +5,15 @@
 #############################################################
 num = input('주민번호를 입력해주세요:')
 
-if int(num[7]) == 1 or 3:
+if int(num[7]) == 1 or int(num[7]) == 3:
     sex = '남자'
 else:
     sex = '여자'
 
-if int(num[0:2]) <= 24:
-    year = '20' + num[0:2]
-else:
+if int(num[7]) == 1 or int(num[7]) == 2:
     year = '19' + num[0:2]
+else:
+    year = '20' + num[0:2]
 
 month = num[2:4]
 day = num[4:6]
