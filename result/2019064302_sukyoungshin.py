@@ -6,9 +6,9 @@
 num = input('주민번호를 입력해주세요:')
 
 if int(num[7]) == 1 or int(num[7]) == 3:
-    sex = '남자'
+    gen = '남자'
 else:
-    sex = '여자'
+    gen = '여자'
 
 if int(num[7]) == 1 or int(num[7]) == 2:
     year = '19' + num[0:2]
@@ -18,7 +18,7 @@ else:
 month = num[2:4]
 day = num[4:6]
 
-print('나는 {}년 {}월 {}일에 태어난 {}입니다.'.format(year, month, day, sex))
+print('나는 {}년 {}월 {}일에 태어난 {}입니다.'.format(year, month, day, gen))
 
 #############################################################
 
